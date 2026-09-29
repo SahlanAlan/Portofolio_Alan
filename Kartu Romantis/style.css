@@ -1,0 +1,170 @@
+/* ===== Warna & tema (terang / gelap otomatis) ===== */
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg1: #ffd6e0;
+  --bg2: #ffb3c6;
+  --card: #fffafb;
+  --text: #5a2a3a;
+  --accent: #e0245e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg1: #3a1024;
+    --bg2: #5c1a3a;
+    --card: #2a0e1c;
+    --text: #ffe3ec;
+    --accent: #ff5c8a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg1: #3a1024;
+  --bg2: #5c1a3a;
+  --card: #2a0e1c;
+  --text: #ffe3ec;
+  --accent: #ff5c8a;
+}
+
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  font-family: 'Lora', Georgia, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Hati melayang ===== */
+.heart {
+  position: fixed;
+  bottom: -40px;
+  color: var(--accent);
+  opacity: .6;
+  animation: up linear forwards;
+  pointer-events: none;
+}
+@keyframes up {
+  to { transform: translateY(-110vh) rotate(30deg); opacity: 0; }
+}
+
+/* ===== Halaman depan ===== */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.6rem;
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+p.sub { margin: 0 0 28px; opacity: .85; }
+
+.env {
+  font-size: 6rem;
+  cursor: pointer;
+  display: inline-block;
+  animation: beat 1.4s infinite;
+  background: none;
+  border: 0;
+}
+@keyframes beat { 50% { transform: scale(1.12); } }
+
+/* ===== Surat ===== */
+.letter {
+  display: none;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 40px rgba(224, 36, 94, .25);
+  text-align: left;
+  line-height: 1.8;
+  animation: fade .9s ease;
+}
+@keyframes fade { from { opacity: 0; transform: translateY(20px); } }
+
+.letter h2 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--accent);
+  margin-top: 0;
+  font-size: 1.9rem;
+}
+
+.count {
+  text-align: center;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  line-height: 1.6;
+}
+.count b {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sign {
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+button.b {
+  font: inherit;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+#res {
+  margin-top: 14px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: var(--accent);
+  min-height: 2em;
+}
+
+/* ===== Karakter panda & beruang ===== */
+.pair {
+  font-size: 3.4rem;
+  margin: 0 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.pair .mid { font-size: 1.8rem; }
+
+.a1 { display: inline-block; animation: sway 2s ease-in-out infinite; }
+.a2 { display: inline-block; animation: sway 2s ease-in-out infinite reverse; }
+@keyframes sway { 50% { transform: translateY(-8px) rotate(6deg); } }
+
+.hug { margin: 18px 0 0; }
+.hug.on .a1 { animation: none; transform: translateX(26px) rotate(8deg); transition: transform .6s; }
+.hug.on .a2 { animation: none; transform: translateX(-26px) rotate(-8deg); transition: transform .6s; }
