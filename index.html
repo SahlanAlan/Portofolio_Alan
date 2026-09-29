@@ -1,40 +1,433 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portofolio Website</title>
-</head> 
+
+```
+<meta name="description" content="Portfolio Muhammad Sahlan Syah Alim Taruno - Computer Engineering Student, Web Developer, Mobile Developer, and Machine Learning Enthusiast.">
+<meta name="author" content="Muhammad Sahlan Syah Alim Taruno">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<title>Alan | Portfolio</title>
+```
+
+</head>
+
 <body>
-    <header>
-        <a href="#" class="logo">Alan</a>
-        <nav>
-            <a href="#" class="active">Home</a>                
-            <a href="#" >Services</a>                
-            <a href="#" >Skills</a>                
-            <a href="#" >Education</a>                
-            <a href="#" >Experience</a>                
-            <a href="#" >Contact</a>                
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpeg" alt="">
+
+```
+<!-- ================= HEADER ================= -->
+<header>
+    <a href="#home" class="logo">Alan</a>
+
+    <nav id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+
+
+<!-- ================= HOME ================= -->
+<section class="home" id="home">
+
+    <div class="home-img">
+        <img src="main.jpeg" alt="Muhammad Sahlan Syah Alim Taruno">
+    </div>
+
+    <div class="home-content">
+
+        <p class="greeting">Hello, I'm</p>
+
+        <h1>Alan <span>Sahlan</span></h1>
+
+        <h3 class="typing-text">
+            I'm a <span></span>
+        </h3>
+
+        <p>
+            Mahasiswa Teknik Komputer yang memiliki ketertarikan pada
+            pengembangan website, aplikasi mobile, machine learning,
+            computer vision, dan teknologi informasi.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://github.com/SahlanAlan"
+               target="_blank"
+               aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="mailto:alanmuhsahlansyah@gmail.com"
+               aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Alan</span> </h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I'm a web developer and designer. I create beautiful and functional websites that help businesses grow online.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+        <div class="home-buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#projects" class="btn secondary-btn">View Projects</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section">
+
+    <div class="section-title">
+        <p>What I Do</p>
+        <h2>Services</h2>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+                Membuat website yang responsif, terstruktur, dan
+                mudah digunakan menggunakan HTML, CSS, JavaScript,
+                serta teknologi web lainnya.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile Development</h3>
+            <p>
+                Mengembangkan aplikasi mobile dengan fokus pada
+                antarmuka, fungsionalitas, dan integrasi teknologi
+                seperti Flutter dan Android.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-brain"></i>
+            <h3>Machine Learning</h3>
+            <p>
+                Mempelajari dan mengimplementasikan machine learning,
+                computer vision, serta object detection untuk
+                menyelesaikan permasalahan berbasis data.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills-section">
+
+    <div class="section-title">
+        <p>My Abilities</p>
+        <h2>Skills</h2>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skills-box">
+
+            <h3>Programming & Development</h3>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>HTML / CSS</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <span style="width: 85%;"></span>
+                </div>
             </div>
-            <a href="#" class="btn">Hire Me</a>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <span style="width: 70%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Python</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Java</span>
+                    <span>65%</span>
+                </div>
+                <div class="skill-bar">
+                    <span style="width: 65%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Flutter</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <span style="width: 70%;"></span>
+                </div>
+            </div>
+
         </div>
-    </section>
-</body>
-</html>
+
+
+        <div class="skills-box">
+
+            <h3>Tools & Technologies</h3>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="fab fa-github"></i>
+                    <span>Git & GitHub</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fab fa-android"></i>
+                    <span>Android Studio</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-database"></i>
+                    <span>SQLite / SQL</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-robot"></i>
+                    <span>YOLOv8</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-eye"></i>
+                    <span>Computer Vision</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Computer Networking</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+
+    <div class="section-title">
+        <p>My Background</p>
+        <h2>Education</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-date">
+                    S1 • Teknik Komputer
+                </span>
+
+                <h3>
+                    Universitas Negeri Makassar
+                </h3>
+
+                <p>
+                    Jurusan Teknik Informatika dan Komputer
+                </p>
+
+                <p>
+                    Program Studi Teknik Komputer
+                </p>
+
+                <p class="highlight">
+                    IPK: 3,56
+                </p>
+
+                <p>
+                    Mempelajari jaringan komputer, sistem cerdas,
+                    machine learning, pemrograman, basis data,
+                    pengembangan perangkat lunak, dan teknologi
+                    komputer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section experience-section">
+
+    <div class="section-title">
+        <p>My Journey</p>
+        <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-date">
+                    IT Support
+                </span>
+
+                <h3>PT Menara Indonesia</h3>
+
+                <p>
+                    Berperan dalam mendukung kebutuhan teknologi
+                    informasi, termasuk troubleshooting perangkat,
+                    jaringan komputer, instalasi driver, pemeliharaan
+                    sistem operasi, dan dukungan teknis lainnya.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-date">
+                    Praktik Industri
+                </span>
+
+                <h3>PT Kreasi Binar Indonesia</h3>
+
+                <p>
+                    Terlibat dalam pengembangan aplikasi manajemen
+                    stok menggunakan Flutter dan SQLite serta
+                    mempelajari proses pengembangan aplikasi
+                    berdasarkan kebutuhan pengguna.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+
+    <div class="section-title">
+        <p>What I've Built</p>
+        <h2>Projects</h2>
+    </div>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="main.jpeg"
+                     alt="YOLOv8 Coffee Detection Project">
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    Machine Learning • Computer Vision
+                </span>
+
+                <h3>
+                    Deteksi Cacat Visual Kopi Gabah Arabika
+                </h3>
+
+                <p>
+                    Implementasi YOLOv8n untuk mendeteksi cacat
+                    visual pada kopi gabah Arabika pasca pengeringan
+                    berbasis perangkat mobile.
+                </p>
+
+                <div class="project-tags">
+                    <span>YOLOv8</span>
+                    <span>Python</span>
+                    <span>Computer Vision</span>
+                    <span>Android</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+```
