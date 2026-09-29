@@ -700,7 +700,7 @@ margin: 0;
 
 @media (max-width: 1100px) {
 
-```
+
 html {
     font-size: 58%;
 }
@@ -722,13 +722,13 @@ html {
     max-width: 50%;
     margin: auto;
 }
-```
+
 
 }
 
 @media (max-width: 995px) {
 
-```
+
 header {
     padding: 1.8rem 5%;
 }
@@ -810,13 +810,13 @@ nav a.active {
 .contact-container {
     grid-template-columns: 1fr;
 }
-```
+
 
 }
 
 @media (max-width: 768px) {
 
-```
+
 html {
     font-size: 55%;
 }
@@ -867,13 +867,13 @@ section {
     flex-direction: column;
     text-align: center;
 }
-```
+
 
 }
 
 @media (max-width: 480px) {
 
-```
+
 html {
     font-size: 52%;
 }
@@ -915,6 +915,6 @@ html {
 .contact-info h3 {
     font-size: 2.5rem;
 }
-```
+
 
 }

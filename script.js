@@ -143,7 +143,7 @@ if (contactForm) {
             return;
         }
 
-        const whatsappNumber = "628XXXXXXXXXX";
+        const whatsappNumber = "6285175296475";
         const whatsappMessage =
             `Halo Alan,%0A%0A` +
             `Nama: ${name}%0A` +
